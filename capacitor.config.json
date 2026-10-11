@@ -1,0 +1,6 @@
+{
+  "appId": "com.speakup.english",
+  "appName": "SpeakUp English",
+  "webDir": "www",
+  "android": { "allowMixedContent": true }
+}
