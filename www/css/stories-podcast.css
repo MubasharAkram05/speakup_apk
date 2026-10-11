@@ -1,0 +1,41 @@
+/* ===== stories and listening ===== */
+.sh{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:18px;color:#fff;background:linear-gradient(135deg,var(--g1),var(--g2));margin:6px 0 14px;box-shadow:0 4px 0 rgba(0,0,0,.2)}
+.sh>span{font-size:34px}.sh small{display:block;font-size:11px;font-weight:800;letter-spacing:.8px;opacity:.9}.sh b{font-size:17px;font-weight:800}
+.nar{margin:0 0 14px;padding:10px 14px;border-left:4px solid #1cb0f6;background:rgba(28,176,246,.08);border-radius:0 12px 12px 0;color:var(--tx);font-weight:700}
+.story{display:flex;flex-direction:column;gap:12px}
+.sl{display:flex;gap:10px;align-items:flex-end;opacity:.55}.sl.new{opacity:1;animation:up .35s both}.sl.r{flex-direction:row-reverse}
+.sa{font-size:38px;line-height:1;flex:none}
+.sbub{max-width:78%;padding:10px 14px;border:2px solid var(--bd);border-radius:18px 18px 18px 6px;background:var(--card);font-size:18px;line-height:1.6;box-shadow:0 3px 0 var(--bd)}
+.sl.r .sbub{border-radius:18px 18px 6px 18px;background:rgba(28,176,246,.1);border-color:rgba(28,176,246,.4)}
+.sbub small{display:block;font-size:12px;font-weight:800;color:var(--mu);margin-bottom:2px}
+.dict{display:block;width:100%;margin-top:26px;min-height:120px;padding:12px 14px;border-radius:16px;border:2px solid var(--bd);background:var(--card);color:var(--tx);font:inherit;font-size:18px;resize:none}
+.dict:focus{outline:none;border-color:#1cb0f6}
+/* ===== podcast listening ===== */
+.studio{position:relative;height:214px;margin:4px 0 12px;border-radius:24px;overflow:hidden;background:linear-gradient(180deg,rgba(28,176,246,.14),rgba(88,204,2,.08))}
+.studio .host{position:absolute;right:12%;bottom:34px;font-size:108px;line-height:1}
+.studio .desk{position:absolute;left:6%;right:6%;bottom:0;height:48px;border-radius:16px 16px 0 0;background:linear-gradient(180deg,#fdd9a0,#f2c585);display:flex;justify-content:space-around;align-items:flex-start;font-size:26px;padding-top:2px}
+.sbb{position:absolute;left:9%;top:16px;width:110px;height:110px;border-radius:50%;border:3px solid var(--bd);background:var(--card);display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;transform:scale(.8);transition:opacity .2s,transform .2s}
+.sbb.on{opacity:1;transform:none}
+.sbb:after{content:"";position:absolute;bottom:-11px;left:50%;margin-left:-8px;width:16px;height:16px;background:var(--card);border-right:3px solid var(--bd);border-bottom:3px solid var(--bd);transform:rotate(45deg)}
+.pav{font-size:46px;line-height:1}
+.dots{display:flex;gap:5px;margin-top:8px}
+.dots i{width:7px;height:7px;border-radius:50%;background:#1cb0f6;animation:blink 1s infinite}
+.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}.dots i:nth-child(4){animation-delay:.45s}
+@keyframes blink{50%{opacity:.2}}
+.pctl{display:flex;justify-content:space-around;align-items:center;margin-top:20px}
+.pctl .icon{width:58px;height:58px;font-size:24px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.pctl small{font-size:11px;font-weight:800;margin-left:1px}
+.studio~.opts{margin-top:10px}
+.tfrow{display:flex;gap:26px;justify-content:center;margin:12px 0}
+.tfb{width:118px;height:118px;font-size:54px;display:flex;align-items:center;justify-content:center;border-radius:22px;padding:0;color:#1cb0f6}
+.pgrid{display:flex;gap:14px}.pcol{flex:1;display:flex;flex-direction:column;gap:14px}
+.pbtn{min-height:68px;border-radius:20px;border:2px solid var(--bd);background:var(--card);color:var(--tx);box-shadow:0 3px 0 var(--bd);text-transform:none;letter-spacing:0;font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:6px;padding:0 8px}
+.pbtn .i,.pbtn i{width:3px;border-radius:3px;background:#1cb0f6;display:block}
+.pbtn.sel{border-color:#1cb0f6;background:rgba(28,176,246,.12)}
+.pbtn.ok{opacity:.3;pointer-events:none}
+.pbtn.no{border-color:#ff4b4b;animation:shake .3s}
+@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.hwt.sel{border-color:#58cc02;color:#58cc02;background:rgba(88,204,2,.12)}
+.lbar:empty{display:none}
+.topic{margin:8px 0 0;padding:12px 16px;border-radius:16px;text-align:center;background:rgba(88,204,2,.1);border:2px solid rgba(88,204,2,.35)}
+.topic small{display:block;font-size:11px;font-weight:800;letter-spacing:1px;color:#58cc02}.topic b{font-size:18px;font-weight:800}

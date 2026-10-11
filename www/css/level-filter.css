@@ -1,0 +1,5 @@
+/* ===== LEVEL FILTER: Basic / Intermediate / Advanced buttons under the section chips ===== */
+.lvs{display:flex;gap:6px;margin:8px 0 2px;padding:4px;border:2px solid var(--bd);border-radius:16px;background:var(--card)}
+.lvs button{flex:1;min-width:0;min-height:40px;padding:0 4px;font-size:11px;letter-spacing:.3px;background:none;color:var(--mu);box-shadow:none;border-radius:12px}
+.lvs button:hover{box-shadow:none;filter:none}
+.lvs button.act{background:#58cc02;color:#fff;box-shadow:0 3px 0 #58a700}
